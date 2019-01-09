@@ -20,10 +20,15 @@
       <% squares = [1,4,9,16] %>
       <% squares.each do |square| %>
         <li><%= square %></li>
-      <% end %>  
+      <% end %>
     </ul>
     <br>
-    <% wall_posts = ["First post!", "Second post!", "Hello, it's your mother. Why don't you ever call me?"] %>
-
+    <% wall_posts = ["First post!", "Second post!", "Hello, it's your mother. 
+      Why don't you ever call me?"] %>
+      <ul>
+        <% wall_posts.each do |post| %>
+          <li><%= post %></li>
+        <% end %>
+      </ul>
   </body>
 </html>
